@@ -2,6 +2,9 @@
  * Create a list that holds all of your cards
  */
 
+var cardList = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-anchor","fa-bolt","fa-bolt",
+                "fa-cube","fa-cube","fa-leaf","fa-leaf","fa-bicycle","fa-bicycle","fa-diamond","fa-diamond","fa-bomb","fa-bomb"]
+
 
 /*
  * Display the cards on the page
@@ -9,6 +12,9 @@
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
+var displayCards = document.querySelector(".testCardDisplay");
+displayCards.appendCild()
+
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
