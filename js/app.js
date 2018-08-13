@@ -13,7 +13,7 @@ var cardList = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-
  *   - add each card's HTML to the page
  */
 var displayCards = document.querySelector(".testCardDisplay");
-displayCards.appendChild()
+/*displayCards.appendChild(cardList)*/
 
 function createNewCardList(){
 for(i=0; i < cardlist.length; i++ ){
