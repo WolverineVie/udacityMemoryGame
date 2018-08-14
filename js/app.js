@@ -2,7 +2,7 @@
  * Create a list that holds all of your cards
  */
 
-var cardList = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-anchor","fa-bolt","fa-bolt",
+var cardList1 = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-anchor","fa-bolt","fa-bolt",
                 "fa-cube","fa-cube","fa-leaf","fa-leaf","fa-bicycle","fa-bicycle","fa-diamond","fa-diamond","fa-bomb","fa-bomb"]
 
 
@@ -15,7 +15,7 @@ var cardList = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-
 var displayCards = document.querySelector(".testCardDisplay");
 /*displayCards.appendChild(cardList)*/
 
-function createNewCardList(){
+function createNewCardList(cardList){
 for(i=0; i < cardlist.length; i++ ){
   
   var divCreation =document.createElement('div');
