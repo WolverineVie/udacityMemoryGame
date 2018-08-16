@@ -15,7 +15,7 @@ var cardList1 = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa
 var displayCards = document.querySelector(".testCardDisplay");
 /*displayCards.appendChild(cardList)*/
 
-function createNewCardList(cardList){
+function createNewCardList(cardlist){
 for(i=0; i < cardlist.length; i++ ){
   
   var divCreation =document.createElement('div');
