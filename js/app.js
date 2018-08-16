@@ -3,7 +3,7 @@
  */
 
 var cardList1 = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-anchor","fa-bolt","fa-bolt",
-                "fa-cube","fa-cube","fa-leaf","fa-leaf","fa-bicycle","fa-bicycle","fa-diamond","fa-diamond","fa-bomb","fa-bomb"]
+                "fa-cube","fa-cube","fa-leaf","fa-leaf","fa-bicycle","fa-bicycle","fa-diamond","fa-diamond","fa-bomb","fa-bomb"];
 
 
 /*
