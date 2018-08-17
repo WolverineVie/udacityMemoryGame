@@ -18,9 +18,12 @@ var displayCards = document.querySelector(".testCardDisplay");
 function createNewCardList(cardlist){
 for(i=0; i < cardlist.length; i++ ){
   
-  var divCreation =document.createElement('div');
-  divCreation.innerHTML = cardlist[i];
-  displayCards.appendChild(divCreation);
+  var liCreation =document.createElement('li');
+  liCreation.className = "card";
+  /*liCreation.innerHTML = cardlist[i];  oldWorkingVersion*/
+  liCreation.innerHTML = <i class="fa cardlist[i]"></i>;
+
+  displayCards.appendChild(liCreation);
 }
 };
 
