@@ -12,8 +12,6 @@
 <script>
     var cardList1 = ["fa-diamond","fa-diamond","fa-paper","fa-paper","fa-anchor","fa-anchor","fa-bolt","fa-bolt",
                 "fa-cube","fa-cube","fa-leaf","fa-leaf","fa-bicycle","fa-bicycle","fa-diamond","fa-diamond","fa-bomb","fa-bomb"];
-    /*var cardList2 = shuffle(cardList1);*/
-    var cardList2 = [];
 </script>
 </head>
 <body>
@@ -33,7 +31,7 @@
         	<span class="moves">3</span> Moves
 
             <div class="restart">
-        		<i class="fa fa-repeat" onclick="cardList2 = shuffle(cardList1)"></i>
+        		<i class="fa fa-repeat" onclick="cardList1 = shuffle(cardList1)"></i>
         	</div>
         </section>
 
@@ -88,7 +86,7 @@
             </li>
         </ul>
     </div>
-    <button onclick="createNewCardList(cardList2)">createNewCardList</button>
+    <button onclick="createNewCardList(cardList1)">createNewCardList</button>
     <div class="testCardDisplay"> 
     </div>
 </body>
