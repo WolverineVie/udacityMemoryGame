@@ -16,15 +16,18 @@ var displayCards = document.querySelector(".testCardDisplay");
 /*displayCards.appendChild(cardList)*/
 
 function createNewCardList(cardlist){
-for(i=0; i < cardlist.length; i++ ){
-  
-  var liCreation =document.createElement('li');
+for(i=0; i < cardlist.length; i++ ){  
+  var liCreation = document.createElement('li');
   liCreation.className = "card";
   /*liCreation.innerHTML = cardlist[i];  oldWorkingVersion*/
-  liCreation.innerHTML = <i class="fa cardlist[i]"></i>;
-
-  displayCards.appendChild(liCreation);
-}
+  /*liCreation.innerHTML = <i class="fa cardlist[i]"></i>;*/
+    var iCreation = document.createElement('i');
+    iCreation.className = "fa";
+    iCreation.className += cardlist[i];
+    liCreation.append(iCreation);
+    var ulDock = document.getElementByClass('testCardDisplay');
+    ulDock.append(liCreation);    
+    } 
 };
 
 
