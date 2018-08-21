@@ -25,7 +25,7 @@ for(i=0; i < cardlist.length; i++ ){
     iCreation.className = "fa";
     iCreation.className += cardlist[i];
     liCreation.append(iCreation);
-    var ulDock = document.getElementsByClassName('testCardDisplay');
+    var ulDock = document.getElementsByClassName("testCardDisplay");
     ulDock.append(liCreation);    
     } 
 };
