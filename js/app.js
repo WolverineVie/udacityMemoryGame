@@ -34,7 +34,7 @@ for(i=0; i < cardlist.length; i++ ){
     }
   
   var ulDock = document.getElementsByClassName("testCardDisplay");
-  ulDock.parentNode.replaceChild(ulCreation , ulDock)
+  ulDock.parentNode.replaceChild(ulCreation , ulDock);
   
 };
 
