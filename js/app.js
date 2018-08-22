@@ -16,6 +16,10 @@ var displayCards = document.querySelector(".testCardDisplay");
 /*displayCards.appendChild(cardList)*/
 
 function createNewCardList(cardlist){
+  
+  var ulCreation = document.createElement('ul');
+    ulCreation.className = "";
+  
 for(i=0; i < cardlist.length; i++ ){  
   var liCreation = document.createElement('li');
   liCreation.className = "card";
@@ -25,9 +29,13 @@ for(i=0; i < cardlist.length; i++ ){
     iCreation.className = "fa";
     iCreation.className += cardlist[i];
     liCreation.append(iCreation);
-    var ulDock = document.getElementsByClassName("testCardDisplay");
-    ulDock.append(liCreation);    
-    } 
+    
+    ulCreation.append(liCreation);   
+    }
+  
+  var ulDock = document.getElementsByClassName("testCardDisplay");
+  ulDock.parentNode.replaceChild(ulCreation , ulDock)
+  
 };
 
 
