@@ -33,8 +33,9 @@ for(i=0; i < cardlist.length; i++ ){
     ulCreation.append(liCreation);   
     }
   
-  var ulDock = document.getElementsByClassName("testCardDisplay");
-  ulDock.parentNode.replaceChild(ulCreation, ulDock[0]);
+  /*var ulDock = document.getElementsByClassName("testCardDisplay");*/
+  var ulDock = document.getElementById("testCard69");
+  ulDock.parentNode.replaceChild(ulCreation, ulDock);
   
 };
 
