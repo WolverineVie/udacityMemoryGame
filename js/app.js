@@ -30,7 +30,8 @@ for(i=0; i < cardlist.length; i++ ){
     iCreation.className += cardlist[i];
     liCreation.append(iCreation);
     
-    ulCreation.append(liCreation);   
+    ulCreation.append(liCreation);
+    ulCreation.className = "deck";
     }
   
   /*var ulDock = document.getElementsByClassName("testCardDisplay");*/
