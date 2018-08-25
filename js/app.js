@@ -26,7 +26,7 @@ for(i=0; i < cardlist.length; i++ ){
   /*liCreation.innerHTML = cardlist[i];  oldWorkingVersion*/
   /*liCreation.innerHTML = <i class="fa cardlist[i]"></i>;*/
     var iCreation = document.createElement('i');
-    iCreation.className = "fa";
+    iCreation.className = "fa ";
     iCreation.className += cardlist[i];
     liCreation.append(iCreation);
     
