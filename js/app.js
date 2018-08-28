@@ -55,6 +55,9 @@ function shuffle(array) {
     return array;
 }
 
+function shuffleAlert() {
+    setTimeout(function(){ alert("Cards have been reshuffled"); }, 0);
+}
 
 /*
  * set up the event listener for a card. If a card is clicked:
@@ -66,14 +69,26 @@ function shuffle(array) {
  *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
-var clickedCard = document.getElementsByClassName("fa");
 
-function displayCard(){
-  this.addClassName += " open show";
+/*document.getbbbbbbbElementsByClassName("fa").addEventListener("click",checkStatus);*/
+var clickedCard = document.getElementsByClassName("card");
+console.log(clickedCard.length+"pre")
+
+var currentCard ;
+
+function displayCard( currentCard){
+  currentCard.className += " open show";;
 };
 
-for( var i=0; i <= clickedCard.lenght; i++){
-  clickedCard[0].addEventListener("click",function(){
-    function displayCard();
+for( let i=0; i < clickedCard.length; i++){
+  /*clickedCard[i].className += " open show";
+  console.log(clickedCard[i]);     for testing-it worksj*/   
+  clickedCard[i].addEventListener("click", function() {
+      console.log(i);
+      displayCard(clickedCard[i]);
+      
+
   });
 };
+
+
